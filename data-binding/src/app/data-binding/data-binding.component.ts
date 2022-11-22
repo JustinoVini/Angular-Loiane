@@ -24,6 +24,7 @@ export class DataBindingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

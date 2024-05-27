@@ -15,11 +15,13 @@ export class DataBindingComponent implements OnInit {
 
   nomeDoCurso: string = 'Angular';
 
+  valorInicial: number = 15;
+
   getValor() {
     return 1;
   }
 
-  getCurtirCurso(){
+  getCurtirCurso() {
     return true;
   }
 
@@ -27,6 +29,10 @@ export class DataBindingComponent implements OnInit {
 
   ngOnInit(): void {
 
+  }
+
+  onMudouValor(evento: any) {
+    console.log(evento.novoValor);
   }
 
 }

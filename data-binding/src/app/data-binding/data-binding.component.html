@@ -59,5 +59,7 @@ após isso precisamos usar um select no nosso componenet que queremos estilizar 
     <h3>Input/Output Properties</h3>
 
     <app-curso [nome]="nomeDoCurso"></app-curso>
+
+    <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
   </article>
 </section>

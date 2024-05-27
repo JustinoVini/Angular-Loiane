@@ -1,6 +1,5 @@
 <section class="property-databinding">
-
-  <article>
+  <!--article>
     <h3>Interpolation/interpolação</h3>
     <p>String renderizada por interpolação: {{ url }}</p>
     <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
@@ -13,6 +12,52 @@
     <img src="{{ urlDaImg }}">
     <img [src]="urlDaImg">
   <img bind-src="urlDaImg">
-  </article>
+  </article -->
 
+  <!-- Aqui podemos ver como usar o bootstrap com o angular, importando o modulo do bootstrap no nosso
+  angular.json, nos vamos configurar com a variavel de estilo do node lá.
+
+após isso precisamos usar um select no nosso componenet que queremos estilizar e usar o angular nele, conforme abaixo
+
+    <h3>Class e Style Binding</h3>
+    <div>
+      Selecione uma classe:
+      <select #classe (change)="0">
+        <option value="alert-success">Sucesso</option>
+        <option value="alert-info">info</option>
+        <option value="alert-warning">Alerta</option>
+        <option value="alert-danger">Erro</option>
+      </select>
+      <br><br>
+
+      <div class="alert {{ classe.value }}" >
+        Texto colorido conforme o valor
+      </div>
+
+      <div class="alert" role="alert"
+      [class.alert-success]="classe.value == 'alert-success'">
+      Sucesso</div>
+      <div class="alert" role="alert"
+      [class.alert-info]="classe.value == 'alert-info'">
+      Info</div>
+      <div class="alert" role="alert"
+      [class.alert-warning]="classe.value == 'alert-warning'">
+      Alerta</div>
+      <div class="alert" role="alert"
+      [class.alert-danger]="classe.value == 'alert-danger'">
+      Erro</div>
+
+      <div class="alert" role="alert"
+      [style.display]="classe.value == 'alert.danger' ? 'block' : 'none'">
+      Esse texto só aparece em caso de erro</div>
+
+    </div>
+
+
+-->
+  <article>
+    <h3>Input/Output Properties</h3>
+
+    <app-curso [nome]="nomeDoCurso"></app-curso>
+  </article>
 </section>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
@@ -13,6 +13,8 @@ export class DataBindingComponent implements OnInit {
 
   urlDaImg: any = 'https://pixabay.com/photos/road-forest-fall-autumn-season-1072823/';
 
+  nomeDoCurso: string = 'Angular';
+
   getValor() {
     return 1;
   }
@@ -24,6 +26,7 @@ export class DataBindingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
